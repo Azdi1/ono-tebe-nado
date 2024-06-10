@@ -1,1 +1,268 @@
 /* место для вашего кода */
+
+body {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 148px 1fr;
+  align-items: center;
+  margin: 102px 24px 93px;
+  padding: 1px 25px;
+  font-family: "Raleway";
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.header__links-list {
+  display: flex;
+  gap: 34px;
+}
+
+.header__links-list-item {
+  list-style-type: circle;
+}
+
+.header__links-list-item_no-bullit {
+  list-style-type: none;
+}
+
+.header__link {
+  text-underline-offset: 4px;
+}
+
+.header__links-list-item_no-bullit .header__link_active {
+  text-decoration: none;
+}
+
+.header__logo {
+  justify-self: center;
+  align-self: center;
+  min-width: 129px;
+}
+.header__logo-image {
+  width: 100%;
+  height: 104px;
+  background-repeat: no-repeat;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  justify-self: end;
+  min-width: 240px;
+  font-style: normal;
+  line-height: 135%;
+  text-underline-offset: 4px;
+}
+
+/* Main section */
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  opacity: 0.6;
+  background-color: #000;
+}
+
+.cover {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 167px 50px 50px;
+  color: #fff;
+  background-image: url(../images/cover.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.cover__title {
+  z-index: 1;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 115%;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+
+.letter-spacing-extended {
+  letter-spacing: 0.6em;
+}
+
+.aligned-text {
+  display: block;
+  margin-top: 16px;
+  line-height: 100%;
+}
+
+.aligned-text_center {
+  text-align: center;
+}
+
+.aligned-text_right {
+  /* line-height: 100%;
+  letter-spacing: 0.3em; */
+  text-align: end;
+  padding-top: 4px;
+}
+
+.no-letter-spacing {
+  letter-spacing: 0em;
+}
+
+.cover__description {
+  z-index: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 71px;
+  padding-top: 136px;
+}
+
+.cover__description-text {
+  /* font-weight: 400; */
+  font-size: 22px;
+  /* line-height: 127%; */
+  text-transform: uppercase;
+  word-spacing: 0.9em;
+}
+
+.bet-button {
+  border: 1px solid #fff;
+  padding: 11px 32px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: transparent;
+}
+
+/* Карточки */
+
+.lots {
+  padding: 180px 24px 0;
+}
+
+.lots__heading {
+  padding: 0 0 27px 40px;
+  /* font-weight: 700; */
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.lots__card-list {
+  display: flex;
+  gap: 25px;
+  list-style-type: none;
+}
+
+.lots__card-list-item {
+  width: 334px;
+}
+
+.card-link {
+  text-decoration: none;
+  text-underline-offset: 4px;
+}
+
+.card {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 50px 40px 47px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.card_type_film {
+  background-image: url(../images/card-lot-01.jpg);
+}
+
+.card_type_book {
+  background-image: url(../images/card-lot-02.jpg);
+}
+
+.card_type_picture {
+  background-image: url(../images/card-lot-03.jpg);
+}
+
+.card__title {
+  position: relative;
+  color: #fff;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 120%;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-transform: uppercase;
+}
+
+.card__text {
+  position: relative;
+  color: #fff;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+}
+
+.lots__look-more-link {
+  display: block;
+  padding: 31px 102px 146px 40px;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+/* Аукцион */
+
+.about {
+  display: grid;
+  grid-template-columns: 334px 1fr;
+  gap: 26px;
+  height: 595px;
+  padding: 0 24px 0;
+}
+
+.about__column {
+  display: grid;
+  align-items: end;
+}
+
+.about__logo {
+  display: flex;
+  justify-content: center;
+  width: 240px;
+  height: 240px;
+  margin: 35px 0 0 47px;
+  border-radius: 100%;
+  background-color: #000;
+}
+
+.about__logo-image {
+  width: 148px;
+}
+
+.about__title {
+  padding-top: 35px;
+  color: #000;
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.about__text {
+  display: grid;
+  gap: 23px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.01em;
+}
