@@ -103,10 +103,8 @@ body {
 }
 
 .aligned-text_right {
-  /* line-height: 100%;
-  letter-spacing: 0.3em; */
-  text-align: end;
   padding-top: 4px;
+  text-align: end;
 }
 
 .no-letter-spacing {
@@ -123,9 +121,7 @@ body {
 }
 
 .cover__description-text {
-  /* font-weight: 400; */
   font-size: 22px;
-  /* line-height: 127%; */
   text-transform: uppercase;
   word-spacing: 0.9em;
 }
@@ -149,7 +145,6 @@ body {
 
 .lots__heading {
   padding: 0 0 27px 40px;
-  /* font-weight: 700; */
   font-size: 40px;
   text-transform: uppercase;
 }
@@ -219,8 +214,8 @@ body {
   padding: 31px 102px 146px 40px;
   font-weight: 400;
   font-size: 20px;
-  text-underline-offset: 4px;
   text-decoration-thickness: 0px;
+  text-underline-offset: 4px;
 }
 
 /* Аукцион */
@@ -273,25 +268,22 @@ body {
 
 .footer {
   display: flex;
-  padding: 181px 50px 80px;
   gap: 185px;
+  padding: 181px 50px 80px;
   font-weight: 400;
   font-size: 18px;
 }
 
-.footer__menu {
-}
-
 .footer__menu-list {
-  list-style-type: none;
   display: grid;
   justify-items: center;
+  list-style-type: none;
 }
 
 .footer__social-list {
   display: flex;
-  list-style-type: none;
   gap: 48px;
+  list-style-type: none;
 }
 
 .footer__menu-link {
